@@ -1,0 +1,79 @@
+Name:               hw12-node
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=hw12-node
+                    kubernetes.io/os=linux
+Annotations:        csi.volume.kubernetes.io/nodeid: {"csi.tigera.io":"hw12-node"}
+                    kubeadm.alpha.kubernetes.io/cri-socket: unix:///var/run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    projectcalico.org/IPv4Address: 10.132.0.5/32
+                    projectcalico.org/IPv4VXLANTunnelAddr: 192.168.132.192
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 02 Feb 2023 00:28:37 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  hw12-node
+  AcquireTime:     <unset>
+  RenewTime:       Sun, 05 Feb 2023 22:25:33 +0000
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Sun, 05 Feb 2023 13:45:36 +0000   Sun, 05 Feb 2023 13:45:36 +0000   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Sun, 05 Feb 2023 22:24:33 +0000   Fri, 03 Feb 2023 11:34:15 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Sun, 05 Feb 2023 22:24:33 +0000   Fri, 03 Feb 2023 11:34:15 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Sun, 05 Feb 2023 22:24:33 +0000   Fri, 03 Feb 2023 11:34:15 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Sun, 05 Feb 2023 22:24:33 +0000   Fri, 03 Feb 2023 11:34:15 +0000   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.132.0.5
+  Hostname:    hw12-node
+Capacity:
+  cpu:                4
+  ephemeral-storage:  25215872Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             8136984Ki
+  pods:               110
+Allocatable:
+  cpu:                4
+  ephemeral-storage:  23238947597
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             8034584Ki
+  pods:               110
+System Info:
+  Machine ID:                 96de531d34c9fa6e274270314b0a7310
+  System UUID:                96de531d-34c9-fa6e-2742-70314b0a7310
+  Boot ID:                    c188207f-2ee6-4307-bc3e-7e6a65dbd6c4
+  Kernel Version:             5.15.0-1027-gcp
+  OS Image:                   Ubuntu 20.04.5 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.16
+  Kubelet Version:            v1.26.1
+  Kube-Proxy Version:         v1.26.1
+PodCIDR:                      192.168.1.0/24
+PodCIDRs:                     192.168.1.0/24
+Non-terminated Pods:          (8 in total)
+  Namespace                   Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                ------------  ----------  ---------------  -------------  ---
+  calico-system               calico-node-5w9vx                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d21h
+  calico-system               calico-typha-7cb7ff4854-c2995       0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d21h
+  calico-system               csi-node-driver-4f7db               0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d21h
+  hw12-ns                     nginx-deploy-6b7f675859-52hxs       0 (0%)        0 (0%)      0 (0%)           0 (0%)         7h43m
+  hw12-ns                     nginx-deploy-6b7f675859-8wntp       0 (0%)        0 (0%)      0 (0%)           0 (0%)         7h43m
+  hw12-ns                     nginx-deploy-6b7f675859-psncv       0 (0%)        0 (0%)      0 (0%)           0 (0%)         7h43m
+  kube-system                 kube-proxy-f9j5m                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d21h
+  tigera-operator             tigera-operator-54b47459dd-2gg7n    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3d21h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests  Limits
+  --------           --------  ------
+  cpu                0 (0%)    0 (0%)
+  memory             0 (0%)    0 (0%)
+  ephemeral-storage  0 (0%)    0 (0%)
+  hugepages-1Gi      0 (0%)    0 (0%)
+  hugepages-2Mi      0 (0%)    0 (0%)
+Events:              <none>
