@@ -5,6 +5,5 @@ My cluster
 
 Public IP address of worker node - 104.155.83.112
 
-'' 
-kubectl describe node kubenode 
-''
+Information about 
+'' kubectl describe node kubenode ''
