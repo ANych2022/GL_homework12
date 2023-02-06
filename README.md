@@ -10,3 +10,13 @@ echo "$(kubectl describe node hw12-node) > workernode.txt
 
 2. Create my namespace
 
+![hw12-ns](https://user-images.githubusercontent.com/105345932/216852602-8ab734e9-f4cb-41a3-815f-ca4f6508a3bb.png)
+
+3. Prepare pod-deployment.yaml file which will create a Deployment with 3 pods of Nginx server and service for access to these pods via ClusterIP and NodePort. 
+
+
+Show the status of deployment, pods and services. Describe all resources which you will create and logs from pods
+
+
+
+
