@@ -29,6 +29,13 @@ Public IP address of worker node - 104.155.83.112
  - description of the pod
  
  ![5 describe pod](https://user-images.githubusercontent.com/105345932/217074106-f608a76b-6677-426f-9e3c-42cde9c6c9b0.png)
+ 
+ - description of the services
+
+![41 svc description](https://user-images.githubusercontent.com/105345932/217079502-34a21d81-d605-4b42-87ba-27268aea5982.png)
+
+
+
 
 
 
