@@ -38,6 +38,38 @@ Public IP address of worker node - 104.155.83.112
 
 ![6 pod log](https://user-images.githubusercontent.com/105345932/217081423-22c7a26c-2aa5-4fb6-950b-24dfadfed4a0.png)
 
+6. Prepare two job yaml files:
+ - one gets content via curl from an internal port (ClusterIP) - curl-clusterip.yaml
+ - second, get content via curl from an external port (NodePort) - curl-nodeport.yaml
+ 
+ ![7 create jobs](https://user-images.githubusercontent.com/105345932/217096102-f5d1360a-139a-48c5-bc3a-876386523f38.png)
+  
+  Check logs for each job:
+  
+  ![8 logs cluster ip](https://user-images.githubusercontent.com/105345932/217097927-36f1974e-1eb1-4a2e-a7e8-b044e40343f1.png)
+  
+  ![9 logs nodeport](https://user-images.githubusercontent.com/105345932/217097963-a8c80105-98b3-42a3-9b9f-4bdce9134310.png)
+
+7. Prepare cronjob.yaml file which will test the connection to Nginx or Apache service every 3 minutes.
+
+![10 apply cronjob](https://user-images.githubusercontent.com/105345932/217098318-73bc71e3-a574-4652-8feb-42cadff2a5df.png)
+
+ - describe cron job
+
+![11 decribe cj](https://user-images.githubusercontent.com/105345932/217098526-2df9f207-39f8-4ce4-9b5e-265c9bc97d24.png)
+
+- list cronjobs in a while and check the result
+
+![12 cj test](https://user-images.githubusercontent.com/105345932/217098676-8e001996-7fa2-42d1-b5b1-0994ae88bf7c.png)
+
+
+
+
+
+
+
+
+
 
 
 
