@@ -54,13 +54,20 @@ Public IP address of worker node - 104.155.83.112
 
 ![10 apply cronjob](https://user-images.githubusercontent.com/105345932/217098318-73bc71e3-a574-4652-8feb-42cadff2a5df.png)
 
- - describe cron job
+ - describe cronjob
 
 ![11 decribe cj](https://user-images.githubusercontent.com/105345932/217098526-2df9f207-39f8-4ce4-9b5e-265c9bc97d24.png)
 
-- list cronjobs in a while and check the result
+- list cronjobs
 
 ![12 cj test](https://user-images.githubusercontent.com/105345932/217098676-8e001996-7fa2-42d1-b5b1-0994ae88bf7c.png)
+
+- log of one cronjob
+
+![14 status cj](https://user-images.githubusercontent.com/105345932/217103917-e28d919c-900c-41eb-bfd8-f73595c2c259.png)
+
+
+
 
 
 
