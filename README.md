@@ -9,19 +9,19 @@ Public IP address of worker node - 104.155.83.112
 
 ```echo "$(kubectl describe node hw12-node)" > workernode.txt```
 
-2. Create my namespace
+### 2. Create my namespace
 
 ![hw12-ns](https://user-images.githubusercontent.com/105345932/216852602-8ab734e9-f4cb-41a3-815f-ca4f6508a3bb.png)
 
-3. Prepare pod-deployment.yaml file which will create a Deployment with 3 pods of Nginx server and service for access to these pods via ClusterIP and NodePort. 
+### 3. Prepare pod-deployment.yaml file which will create a Deployment with 3 pods of Nginx server and service for access to these pods via ClusterIP and NodePort. 
 
 ![deploy and service created](https://user-images.githubusercontent.com/105345932/217067934-c246703d-1a46-4654-98c2-197fe5ae5a9e.png)
 
-4. Show the status of deployment, pods and services. 
+### 4. Show the status of deployment, pods and services. 
 
 ![21 info about depl pods svc](https://user-images.githubusercontent.com/105345932/217071599-fed9e5c5-e808-41ba-90e8-e0f724018c0d.png)
 
-5. Describe all created resources and show logs from pods:
+### 5. Describe all created resources and show logs from pods:
  - description of the deployment
  
  ![3 deploy description](https://user-images.githubusercontent.com/105345932/217073702-a54d86b9-465a-4d36-ab03-6ca6b1ab6cb3.png)
@@ -38,7 +38,7 @@ Public IP address of worker node - 104.155.83.112
 
 ![6 pod log](https://user-images.githubusercontent.com/105345932/217081423-22c7a26c-2aa5-4fb6-950b-24dfadfed4a0.png)
 
-6. Prepare two job yaml files:
+### 6. Prepare two job yaml files:
  - one gets content via curl from an internal port (ClusterIP) - curl-clusterip.yaml
  - second, get content via curl from an external port (NodePort) - curl-nodeport.yaml
  
@@ -50,7 +50,7 @@ Public IP address of worker node - 104.155.83.112
   
   ![9 logs nodeport](https://user-images.githubusercontent.com/105345932/217097963-a8c80105-98b3-42a3-9b9f-4bdce9134310.png)
 
-7. Prepare cronjob.yaml file which will test the connection to Nginx or Apache service every 3 minutes.
+### 7. Prepare cronjob.yaml file which will test the connection to Nginx or Apache service every 3 minutes.
 
 ![10 apply cronjob](https://user-images.githubusercontent.com/105345932/217098318-73bc71e3-a574-4652-8feb-42cadff2a5df.png)
 
