@@ -19,7 +19,8 @@ Public IP address of worker node - 104.155.83.112
 
 4. Show the status of deployment, pods and services. Describe all created resources and logs from pods
 
-![2 info about depl pods svc](https://user-images.githubusercontent.com/105345932/217068458-4fd49675-394d-4d73-b406-d13f0aaddce7.png)
+![21 info about depl pods svc](https://user-images.githubusercontent.com/105345932/217071599-fed9e5c5-e808-41ba-90e8-e0f724018c0d.png)
+
 
 
 
