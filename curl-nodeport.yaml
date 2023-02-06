@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: content-nodeport
+  namespace: hw12-ns
+spec:
+  template:
+    spec:
+      containers:
+      - name: content-nodeport
+        image: curlimages/curl:latest
+        command: ['sh', '-c', 'curl http://104.155.83.112:30007/']
+      restartPolicy: OnFailure

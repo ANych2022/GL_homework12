@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: content-clusterip
+  namespace: hw12-ns
+spec:
+  template:
+    spec:
+      containers:
+      - name: content-clusterip
+        image: curlimages/curl:latest
+        command: ['sh', '-c', 'curl http://10.96.1.10:80/']
+      restartPolicy: OnFailure

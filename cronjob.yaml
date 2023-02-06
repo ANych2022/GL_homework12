@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: curl-cronjob
+  namespace: hw12-ns
+spec:
+  schedule: "*/3 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: curl-cronjob
+            image: curlimages/curl:latest
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -c
+            - date; curl -s -o /dev/null -w "status %{http_code}\n" http://104.155.83.112:30007
+          restartPolicy: OnFailure
