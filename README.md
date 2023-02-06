@@ -14,8 +14,12 @@ echo "$(kubectl describe node hw12-node) > workernode.txt
 
 3. Prepare pod-deployment.yaml file which will create a Deployment with 3 pods of Nginx server and service for access to these pods via ClusterIP and NodePort. 
 
+![deploy and service created](https://user-images.githubusercontent.com/105345932/217067934-c246703d-1a46-4654-98c2-197fe5ae5a9e.png)
 
-Show the status of deployment, pods and services. Describe all resources which you will create and logs from pods
+4. Show the status of deployment, pods and services. Describe all created resources and logs from pods
+
+![2 info about depl pods svc](https://user-images.githubusercontent.com/105345932/217068458-4fd49675-394d-4d73-b406-d13f0aaddce7.png)
+
 
 
 
