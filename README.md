@@ -5,11 +5,11 @@ My cluster
 
 Public IP address of worker node - 104.155.83.112
 
-### 1. Information about worker node "hw12-node" saved into file workernode.txt
+#### 1. Information about worker node "hw12-node" saved into file workernode.txt
 
 ```echo "$(kubectl describe node hw12-node)" > workernode.txt```
 
-### 2. Create my namespace
+#### 2. Create my namespace
 
 ![hw12-ns](https://user-images.githubusercontent.com/105345932/216852602-8ab734e9-f4cb-41a3-815f-ca4f6508a3bb.png)
 
