@@ -7,7 +7,7 @@ Public IP address of worker node - 104.155.83.112
 
 1. Information about worker node "hw12-node" saved into file workernode.txt
 
-```echo "$(kubectl describe node hw12-node) > workernode.txt```
+```echo "$(kubectl describe node hw12-node)" > workernode.txt```
 
 2. Create my namespace
 
